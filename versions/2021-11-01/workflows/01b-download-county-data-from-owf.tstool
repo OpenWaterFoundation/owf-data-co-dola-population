@@ -1,0 +1,4 @@
+# Download county list from Open Water Foundation GitHub repository:
+# - this should only need to be done periodically
+# - this dataset provides additional properties for counties
+WebGet(URI="https://raw.githubusercontent.com/OpenWaterFoundation/owf-data-co-counties/master/data/Colorado-Counties.csv",ConnectTimeout=10,ReadTimeout=10,LocalFile="../downloads/county-data-owf.csv")

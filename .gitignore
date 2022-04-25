@@ -1,0 +1,38 @@
+# Ignore the following files (do not commit working files to repository).
+
+# Ignore temporary files from editors.
+
+# vi/vim
+*.swp
+*.swo
+
+# Office temporary files.
+
+*.tmp
+
+# TSTool log files.
+
+*.log
+
+# Word and office files that should not be committed.
+#~$*.doc*
+# Excel
+#~$*.xls*
+# PowerPoint
+#~$*.ppt*
+~$*
+
+# Ignore dynamic content.
+# Do commit README files that define the folder structure
+# so that new developers don't need to do that manually.
+
+/versions/2021-11-01/downloads/*
+!/versions/2021-11-01/downloads/README.md
+
+/versions/2021-11-01/results/**
+!/versions/2021-11-01/results/README.md
+!/versions/2021-11-01/results/db/README.md
+!/versions/2021-11-01/results/graphs/README.md
+!/versions/2021-11-01/results/logs/README.md
+!/versions/2021-11-01/results/spatial/README.md
+!/versions/2021-11-01/results/ts/README.md

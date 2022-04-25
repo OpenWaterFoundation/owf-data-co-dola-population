@@ -1,0 +1,14 @@
+# Download county population data from CO Department of Local Affairs (DOLA)
+# - this should only need to be done periodically (once per year)
+# - data are usually updated in October
+#
+# The following are historical population estimates (csv file)
+# - see page:  https://demography.dola.colorado.gov/assets/html/sdodata.html
+# - download using the link "County and Municipal Timeseries, 1980 to 2020 File Downloads"
+# - keep the original name in output
+WebGet(URI="https://storage.googleapis.com/co-publicdata/county-muni-timeseries.csv",ConnectTimeout=10,ReadTimeout=10,LocalFile="../downloads/county-muni-timeseries.csv")
+#
+# The following are population forecasts (Excel xls workbook)
+# - see page:  https://demography.dola.colorado.gov/assets/html/county.html
+# - download from link "County Population 1-year Forecasts, 2000 to 2050
+WebGet(URI="https://docs.google.com/spreadsheets/d/1QDKPeR_mU_gEdBwl9rThugP7tLq-r3yu/export?format=xlsx",ConnectTimeout=10,ReadTimeout=10,LocalFile="../downloads/county-population-forecast-dola.xlsx")
